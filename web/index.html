@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<title>Voter Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./images/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+	<script src="../scripts/script.js"></script>
+</head>
+<body>
+	<div id="main">
+		<form  name= "rgstForm" method="post" action="Registration.jsp">
+			<div id= "formHeader">
+				<img src="./images/user.png" alt="icon">
+				<br>
+				<span>Voter Registration</span>
+			</div>
+			<hr>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input  type="text" id="fName" name="fName" class="inputField" required="required" minlength="3" placeholder="First Name">
+			</div>
+			<div class = "iconName">
+                            <img src="./images/accountName.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input type="text" id="lName" name="lName" class="inputField" required="required" minlength="3" placeholder="Last Name">
+			</div>
+			<div class = "iconName1">
+					<img src="./images/accountName.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input type="email" id="email" name="email" class="inputField" required="required" placeholder="Email">
+			</div>
+			<div class = "iconEmail">
+					<img src="./images/emailIcon.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input type="text" id="idNumber" name="idNumber"class="inputField" required="required" placeholder="ID Number">
+			</div>
+			<div id = "iconID">
+					<img src="./images/idNumber.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input type="password" id="uPass" name="uPass" class="inputField" required="required" placeholder="Password">
+			</div>
+			<div id = "iconPassword">
+					<img src="./images/password.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 15px; padding-left: 40px">
+				<input type="password"  style="font-size: 18px;"id="uPassConfirm" class="inputField" name="cUpass"  required="required" placeholder="Re-type Password">
+			</div>
+			<div id = "iconPassword1">
+					<img src="./images/password.png" alt="icon">
+			</div>
+			<div class="bar"></div>
+			<div style="padding-top: 24px; padding-right:120px">
+				<span style="font-family:'Montserrat',sans-serif;  font-size: 18px;">Select your date of birth</span>
+			</div>
+			<div id="calendarIcon">
+				<img src="./images/calendar.png" alt="icon">
+			</div>
+			<div style="padding-top: 20px; margin-right: 180px;">
+				<input type="date" name="dob" max="2000-01-01" required>
+			</div>
+			<div style="padding-top: 24px; padding-right:170px">
+				<span style="font-family:'Montserrat',sans-serif;  font-size: 18px;">Select your gender</span>
+			</div>
+			<div id = "iconGender">
+					<img src="./images/gender.png" alt="icon">
+			</div>
+			<div style="padding-top: 15px; padding-right: 100px; margin-bottom: 15px;">
+					<label class="radio inline"><input type="radio" name="sex" value="male" id="male">
+						<span>Male</span>
+					</label>
+					<label class="radio inline"><input type="radio" name="sex" value="female" id="female">
+						<span>Female</span>
+					</label>
+					<label class="radio inline"><input type="radio" name="sex" value="other" id="other">
+						<span>Other</span>
+					</label>
+			</div>
+			<div style="padding-top: 15px;">
+				<label style="font-family: 'Montserrat', sans-serif">
+					<input type="checkbox" name="agreement" required>
+					I agree to the terms and conditions
+				</label>	
+				
+			</div>
+			<div style="margin-bottom: 10px; padding-top: 10px; ">
+				<input type ="submit" name="submit" value="Register" style="font-family: 'Montserrat',sans-serif; font-size: 18px; width: 200px; height:30px;">
+				<a href="./login.jsp">Sign In</a>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
